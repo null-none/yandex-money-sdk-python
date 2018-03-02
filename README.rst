@@ -69,10 +69,10 @@ Using Yandex.Money API requires following steps
            "test_payment": true,
            "test_result": "success"
        };
-       request_result = api.request(request_options)
+       request_result = api.request_payment(request_options)
        # check status
 
-       process_payment = api.process({
+       process_payment = api.process_payment({
            "request_id": request_result['request_id'],
        })
        # check result
